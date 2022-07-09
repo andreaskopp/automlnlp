@@ -1,0 +1,61 @@
+{
+    "databricks": {
+        "eggLibraries": [],
+        "jarLibraries": [],
+        "mavenLibraries": [],
+        "pypiLibraries": [],
+        "rcranLibraries": []
+    },
+    "docker": {
+        "arguments": [],
+        "baseDockerfile": null,
+        "baseImage": "mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.0.3-cudnn8-ubuntu18.04",
+        "baseImageRegistry": null,
+        "enabled": true,
+        "platform": {
+            "architecture": "amd64",
+            "os": "Linux"
+        },
+        "sharedVolumes": true,
+        "shmSize": "16g"
+    },
+    "environmentVariables": {},
+    "inferencingStackVersion": null,
+    "name": "AutoML-DNN-Text-GPU-Candidate",
+    "python": {
+        "baseCondaEnvironment": null,
+        "condaDependencies": {
+            "dependencies": [
+                "python=3.7",
+                {
+                    "pip": [
+                        "--extra-index-url https://azuremlsdktestpypi.azureedge.net/automl-nlp-tests/66679059",
+                        "azureml-core==0.1.0.66679059",
+                        "azureml-automl-core==0.1.0.66679059",
+                        "azureml-automl-dnn-nlp==0.1.0.66679059",
+                        "azureml-automl-runtime==0.1.0.66679059",
+                        "azureml-train-automl-client==0.1.0.66679059",
+                        "azureml-train-automl-runtime==0.1.0.66679059",
+                        "numpy",
+                        "pandas",
+                        "seqeval==1.2.2",
+                        "scikit-learn",
+                        "torch==1.7.1",
+                        "transformers==4.5.1"
+                    ]
+                }
+            ],
+            "name": "azureml_011170106d974219a029b2e2c5b87e9d"
+        },
+        "condaDependenciesFile": null,
+        "interpreterPath": "python",
+        "userManagedDependencies": false
+    },
+    "r": null,
+    "spark": {
+        "packages": [],
+        "precachePackages": true,
+        "repositories": []
+    },
+    "version": "null"
+}

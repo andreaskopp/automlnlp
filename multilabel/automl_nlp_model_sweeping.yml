@@ -1,0 +1,24 @@
+channels:
+  - pytorch
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip=21.1.2
+  - pip:
+      - >-
+        --extra-index-url
+        https://azuremlsdktestpypi.azureedge.net/automl-nlp-tests/66679059/
+      - azureml-core==0.1.0.66679059
+      - azureml-mlflow==0.1.0.66679059
+      - azureml-automl-core==0.1.0.66679059
+      - azureml-automl-dnn-nlp==0.1.0.66679059
+      - azureml-responsibleai==0.1.0.66679059
+      - azureml-automl-runtime==0.1.0.66679059
+      - azureml-train-automl-client==0.1.0.66679059
+      - azureml-train-automl-runtime==0.1.0.66679059
+  - numpy~=1.18.5
+  - pandas~=1.1.5
+  - scikit-learn~=0.22.1
+  - pytorch==1.7.1
+name: azureml_automl_nlp_model_sweeping
